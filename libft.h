@@ -6,7 +6,7 @@
 /*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 10:47:29 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/10 10:32:47 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 16:43:28 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,21 @@
 // # ifndef SIZE_MAX
 // #define SIZE_MAX ((unsigned long)-1)
 // # endif
-int		ft_atoi(const char *ptr);
 
+typedef struct s_list
+{
+	void	*content;
+	struct s_list	*next;
+}	t_list;
+
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+t_list	*ft_lstlast(t_list *lst);
+int		ft_lstsize(t_list *lst);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
+int		ft_atoi(const char *ptr);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
