@@ -6,7 +6,7 @@
 /*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 11:22:45 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/12 19:28:13 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 20:20:42 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	len;
 
 	last = NULL;
-	if (!s)
-		return (last);
+	
 	len = ft_strlen(s);
 	if (c == '\0')
 		return ((char *)(s + len));

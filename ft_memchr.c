@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aosman <aosman@42wolfsburg.de>             +#+  +:+       +#+        */
+/*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 14:35:29 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/09 12:56:28 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 20:23:56 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!str)
-		return (NULL);
 	ptr = (char *)str;
 	while (i < n)
 	{

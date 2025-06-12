@@ -6,7 +6,7 @@
 /*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/08 20:16:48 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/12 18:59:25 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 20:24:53 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	ft_atoi(const char *str)
 
 	sign = 1;
 	result = 0;
-	if (!str)
-		return (0);
 	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v' 
 		|| *str == '\f' || *str == '\r')
 		str++;

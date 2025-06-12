@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aosman <aosman@42wolfsburg.de>             +#+  +:+       +#+        */
+/*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 11:37:56 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/09 22:25:55 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 20:24:20 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	needle_len;
 	size_t	i;
 
-	if (!big)
-		return (NULL);
 	if (!*little)
 		return ((char *)big);
 	needle_len = ft_strlen(little);
