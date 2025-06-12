@@ -6,7 +6,7 @@
 /*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 10:47:29 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/12 16:43:28 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 18:05:47 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
+# include <bsd/string.h>
 
 // Define SIZE_MAX if not available and without using stddef.h
 // # ifndef SIZE_MAX
@@ -35,6 +35,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 t_list	*ft_lstlast(t_list *lst);
 int		ft_lstsize(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstdelone(t_list *lst, void(*del)(void *));
+void	ft_lstclear(t_list **lst, void(*del)(void *));
 
 int		ft_atoi(const char *ptr);
 int		ft_isalpha(int c);

@@ -6,7 +6,7 @@
 /*   By: aosman <aosman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 12:15:51 by aosman            #+#    #+#             */
-/*   Updated: 2025/06/10 10:28:12 by aosman           ###   ########.fr       */
+/*   Updated: 2025/06/12 19:05:30 by aosman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (ft_strlen(s) < start)
-		return (NULL);
-	res = (char *)malloc(len * sizeof(char));
+	res = (char *)malloc(len + 1 * sizeof(char));
 	if (!res)
 		return (NULL);
 	i = 0;
